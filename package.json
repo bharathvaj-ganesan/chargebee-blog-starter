@@ -1,0 +1,57 @@
+{
+  "name": "bharathvaj",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bharathvaj-ganesan/my-portfolio.git"
+  },
+  "scripts": {
+    "setup-config": "rm lib/server/config.js && cp blog.config.js lib/server/config.js",
+    "seed": "node seed.js",
+    "dev": "npm run setup-config && next dev",
+    "build": "npm run setup-config && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap --config next-sitemap.config.js"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.6.0",
+    "@supabase/auth-helpers-react": "^0.3.1",
+    "@supabase/auth-ui-react": "^0.3.5",
+    "@supabase/auth-ui-shared": "^0.1.3",
+    "@supabase/supabase-js": "^2.20.0",
+    "@vercel/analytics": "^0.1.11",
+    "axios": "^1.3.4",
+    "chargebee": ">=2 <3",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "feed": "^4.2.2",
+    "gitalk": "^1.7.2",
+    "mermaid": "^10.0.2",
+    "next": "^13.2.4",
+    "notion-client": "^6.16.0",
+    "notion-utils": "^6.16.0",
+    "preact": "^10.5.15",
+    "prism-theme-vars": "^0.2.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-cusdis": "^2.1.3",
+    "react-dom": "^18.2.0",
+    "react-notion-x": "^6.16.0",
+    "react-tweet-embed": "^2.0.0",
+    "react-use": "^17.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "next-sitemap": "^4.0.5",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "react-notion-x@6.16.0": "patches/react-notion-x@6.16.0.patch",
+      "notion-utils@6.16.0": "patches/notion-utils@6.16.0.patch"
+    }
+  }
+}
