@@ -60,7 +60,7 @@ This project requires a recent version of Node.js (we recommend >= 16).
 - (Optional) Replace favicon.png in /public folder with your own.
 - For local development, run `cp .env.example .env.local` and update the following env properties.
 
-| **Env Property**              | **How to get it ? **                                                                                           |
+| **Env Property**              | **How to get it ?**                                                                                           |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | NOTION_PAGE_ID                | The ID of the Notion page you previously shared to the web, usually has 32 digits after your workspace address |
 | NOTION_ACCESS_TOKEN           | Notion Access Token                                                                                            |
