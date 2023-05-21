@@ -54,7 +54,7 @@ Authentication and user profile information is stored in [Supabase](https://supa
 This project requires a recent version of Node.js (we recommend >= 16).
 
 - Star this repo 😉
-- Duplicate [this Notion template](https://ossified-stilton-a00.notion.site/d51a395709e74a9eaae9f2cd3895f98c?v=1d2ea9e6652e4d508439ed5a9a73e08d). Make sure it is not public.
+- Duplicate [this Notion template](https://bharathvaj-ganesan.notion.site/d51a395709e74a9eaae9f2cd3895f98c?v=1d2ea9e6652e4d508439ed5a9a73e08d). Make sure it is not public.
 - Fork this project by clicking on `Use this template` action.
 - Customize [blog.config.js](https://github.com/bharathvaj-ganesan/chargebee-blog-starter/blob/main/blog.config.js). All config is defined in this file.
 - (Optional) Replace favicon.png in /public folder with your own.
