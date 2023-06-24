@@ -13,6 +13,7 @@ import Scripts from '@/components/Scripts';
 import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import { SessionContextProvider } from '@supabase/auth-helpers-react';
 import { useState } from 'react';
+import NavigationLoader from '@/components/NavigationLoader';
 
 export default function MyApp({ Component, pageProps, config, locale }) {
   const [supabaseClient] = useState(() => createBrowserSupabaseClient());
@@ -23,6 +24,7 @@ export default function MyApp({ Component, pageProps, config, locale }) {
         <ThemeProvider>
           <SessionContextProvider supabaseClient={supabaseClient} initialSession={pageProps?.initialSession}>
             <>
+              {/* <NavigationLoader /> */}
               <Component {...pageProps} />
             </>
           </SessionContextProvider>
